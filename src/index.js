@@ -4,14 +4,16 @@ import { graphqlHTTP } from 'express-graphql';
 import mongoose from 'mongoose'
 import { buildSchema } from 'graphql';
 import routes from "./routes/index";
+import Schemas from "./graphql/index";
 
 const app = express();
 
 app.use(body_Parser.urlencoded({ extended: false}));
 app.use(body_Parser.json());
 app.use('/grapql', graphqlHTTP({
-    schema: buildSchema(`type Query {msg: String}`),
-    rootValue: { msg: () => 'Hello Word' },
+    schema: Schemas,
+    // schema: buildSchema(`type Query {msg: String}`),
+    // rootValue: { msg: () => 'Hello Word' },
     graphiql: true,
     pretty: true
 }));
