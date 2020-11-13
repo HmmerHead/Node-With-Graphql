@@ -12,12 +12,12 @@ import {
             id: {
                 type: GraphQLID,
                 description: 'unique ID',
-                resolve: () => '2'
+                resolve: (person) => person.id
             },
             name: {
                 type: GraphQLString,
                 description: 'Person Name',
-                resolve: () => 'Jhon Doe'
+                resolve: (person) => person.name
             }
         }
     }
