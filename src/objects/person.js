@@ -18,6 +18,11 @@ import {
                 type: GraphQLString,
                 description: 'Person Name',
                 resolve: (person) => person.name
+            },
+            birth: {
+                type: GraphQLString,
+                description: 'Person Birth',
+                resolve: (person) => person.birth
             }
         }
     }

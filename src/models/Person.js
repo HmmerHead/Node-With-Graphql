@@ -1,7 +1,8 @@
 import mongoose, {Schema} from 'mongoose'
 
 const Person = new Schema({
-    name: String
+    name: String,
+    birth: String
 });
 
 export default mongoose.model('Person', Person)

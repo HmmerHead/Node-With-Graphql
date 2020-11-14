@@ -6,8 +6,8 @@ import {
 export default new GraphQLInputObjectType({
     name: 'people_input',
     fields: () => ({
-        name: {type: GraphQLString}
-        //last_name: { type: GraphQLInt }, Ex.
+        name: {type: GraphQLString},
+        birth: { type: GraphQLString }
         //list: { type: GraphQLList(Person) }, Ex.
     })
 })
