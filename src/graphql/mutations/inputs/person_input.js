@@ -8,6 +8,6 @@ export default new GraphQLInputObjectType({
     fields: () => ({
         name: {type: GraphQLString},
         birth: { type: GraphQLString }
-        //list: { type: GraphQLList(Person) }, Ex.
+        //list: { type: GraphQLList(Person) }, Ex. de uso
     })
 })
