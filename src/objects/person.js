@@ -6,7 +6,7 @@ import {
 
  export default new GraphQLObjectType({
     name: 'person',
-    description: 'define a person object',
+    description: 'define person object',
     fields() {
         return {
             id: {
